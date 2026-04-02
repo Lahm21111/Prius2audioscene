@@ -1,0 +1,10 @@
+rosbags
+pandas
+numpy==1.23.5
+tqdm
+pyjson
+jsonschema
+pyyaml
+open3d
+scipy>1.14
+segments-ai

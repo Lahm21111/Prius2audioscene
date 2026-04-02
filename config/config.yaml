@@ -1,0 +1,28 @@
+BAG_INFO:
+  BAGS: /workspaces/Prius2audioscene/rosbag
+  DESCRIPTION: Prius test data
+  LIDARSEG: true
+  NAME: rosbag2_2025_08_21-14_13_15
+  ODOM_TOPIC: None
+  OUTPUT: /workspaces/Prius2audioscene/output
+  SAMPLE_WINDOW: 200
+  TF_TOPIC:
+  - /tf
+  - /tf_static
+LIDARS:
+  LIDAR_TOP: base_link
+MICARRAY:
+  MICARRAY: cae_micarray
+NUSCENES_FILES:
+  attributes: /workspaces/Prius2audioscene/examples/v1.0-test/attribute.json
+  category: /workspaces/Prius2audioscene/examples/v1.0-test/category.json
+  visibility: /workspaces/Prius2audioscene/examples/v1.0-test/visibility.json
+SENSOR_INFO:
+  LIDAR_TOP:
+    FRAME: base_link
+    TOPIC: /sensing/lidar/concatenated/pointcloud
+  MICARRAY:
+    FRAME: cae_micarray
+    FREQUENCY: 48000
+    MIC_NUM: 56
+    TOPIC: /cae_micarray/audio/array

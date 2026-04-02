@@ -1,0 +1,957 @@
+[0.066s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'cae_microphone_array']
+[0.066s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['cae_microphone_array'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x79107d86b0a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79107d9a8100>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79107d9a8100>>, mixin_verb=('build',))
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.143s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspaces/Prius2audioscene'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset/labels) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset/labels) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset/labels) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset/labels) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset/labels) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset/labels) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset/labels) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset/labels) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset/labels) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset/labels) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset/labels) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset/labels) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset/labels) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(dataset/labels) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(examples) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(examples) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(examples) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(examples) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(examples) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(examples) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(examples) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(examples) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(examples) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(examples) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(examples) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(examples) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(examples) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(examples) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(examples/v1.0-test) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(examples/v1.0-test) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(examples/v1.0-test) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(examples/v1.0-test) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(examples/v1.0-test) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(examples/v1.0-test) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(examples/v1.0-test) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(examples/v1.0-test) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(examples/v1.0-test) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(examples/v1.0-test) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(examples/v1.0-test) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(examples/v1.0-test) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(examples/v1.0-test) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(examples/v1.0-test) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(messages) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(messages) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(messages) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(messages) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(messages) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(messages) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(messages) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(messages) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(messages) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(messages) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(messages) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(messages) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(messages) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(messages) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(messages/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(messages/__pycache__) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(messages/__pycache__) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(messages/__pycache__) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(messages/__pycache__) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(messages/__pycache__) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(messages/__pycache__) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(messages/__pycache__) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(messages/__pycache__) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(messages/__pycache__) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(messages/__pycache__) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(messages/__pycache__) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(messages/__pycache__) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(messages/__pycache__) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/docs) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/docs) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/docs) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/docs) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/docs) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/docs) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/docs) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/docs) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/docs) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/docs) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/docs) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/docs) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/docs) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/export) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/export) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/export) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/export) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/export) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/export) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/export) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/export) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/export) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/export) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/export) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/export) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/export) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/export) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/scripts) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/scripts) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/scripts) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/scripts) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/scripts) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/scripts) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/scripts) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/scripts) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/scripts) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/scripts) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/scripts) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/scripts) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/scripts) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/tests) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/tests) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/tests) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/tests) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/tests) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/tests) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/tests) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/tests) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/tests) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/tests) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/tests) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/tests) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/tests) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/tests) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/utils) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/utils) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/utils) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/utils) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/utils) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/utils) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/utils) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/utils) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/utils) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/utils) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/utils) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/utils) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/utils) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuimages/utils) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes) by extension 'ros'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes) by extensions ['cmake', 'python']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes) by extension 'cmake'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes) by extension 'python'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes) by extensions ['python_setup_py']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/can_bus) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/can_bus) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/can_bus) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/can_bus) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/can_bus) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/can_bus) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/can_bus) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/can_bus) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/can_bus) by extension 'ros'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/can_bus) by extensions ['cmake', 'python']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/can_bus) by extension 'cmake'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/can_bus) by extension 'python'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/can_bus) by extensions ['python_setup_py']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/can_bus) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval) by extension 'ros'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval) by extensions ['cmake', 'python']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval) by extension 'cmake'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval) by extension 'python'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval) by extensions ['python_setup_py']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/common) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/common) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/common) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/common) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/common) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/common) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/common) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/common) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/common) by extension 'ros'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/common) by extensions ['cmake', 'python']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/common) by extension 'cmake'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/common) by extension 'python'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/common) by extensions ['python_setup_py']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/common) by extension 'python_setup_py'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection) by extension 'ros'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection) by extensions ['cmake', 'python']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection) by extension 'cmake'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection) by extension 'python'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection) by extensions ['python_setup_py']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection) by extension 'python_setup_py'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/configs) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/configs) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/configs) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/configs) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/configs) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/configs) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/configs) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/configs) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/configs) by extension 'ros'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/configs) by extensions ['cmake', 'python']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/configs) by extension 'cmake'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/configs) by extension 'python'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/configs) by extensions ['python_setup_py']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/configs) by extension 'python_setup_py'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/tests) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/tests) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/tests) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/tests) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/tests) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/tests) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/tests) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/tests) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/tests) by extension 'ros'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/tests) by extensions ['cmake', 'python']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/tests) by extension 'cmake'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/tests) by extension 'python'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/tests) by extensions ['python_setup_py']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/detection/tests) by extension 'python_setup_py'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg) by extension 'ros'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg) by extensions ['cmake', 'python']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg) by extension 'cmake'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg) by extension 'python'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg) by extensions ['python_setup_py']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg) by extension 'python_setup_py'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg/tests) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg/tests) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg/tests) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg/tests) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg/tests) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg/tests) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg/tests) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg/tests) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg/tests) by extension 'ros'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg/tests) by extensions ['cmake', 'python']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg/tests) by extension 'cmake'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg/tests) by extension 'python'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg/tests) by extensions ['python_setup_py']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/lidarseg/tests) by extension 'python_setup_py'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/panoptic) by extensions ['ignore', 'ignore_ament_install']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/panoptic) by extension 'ignore'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/panoptic) by extension 'ignore_ament_install'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/panoptic) by extensions ['colcon_pkg']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/panoptic) by extension 'colcon_pkg'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/panoptic) by extensions ['colcon_meta']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/panoptic) by extension 'colcon_meta'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/panoptic) by extensions ['ros']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/panoptic) by extension 'ros'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/panoptic) by extensions ['cmake', 'python']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/panoptic) by extension 'cmake'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/panoptic) by extension 'python'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/panoptic) by extensions ['python_setup_py']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/panoptic) by extension 'python_setup_py'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction) by extensions ['ignore', 'ignore_ament_install']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction) by extension 'ignore'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction) by extension 'ignore_ament_install'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction) by extensions ['colcon_pkg']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction) by extension 'colcon_pkg'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction) by extensions ['colcon_meta']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction) by extension 'colcon_meta'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction) by extensions ['ros']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction) by extension 'ros'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction) by extensions ['cmake', 'python']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction) by extension 'cmake'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction) by extension 'python'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction) by extensions ['python_setup_py']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction) by extension 'python_setup_py'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/configs) by extensions ['ignore', 'ignore_ament_install']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/configs) by extension 'ignore'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/configs) by extension 'ignore_ament_install'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/configs) by extensions ['colcon_pkg']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/configs) by extension 'colcon_pkg'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/configs) by extensions ['colcon_meta']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/configs) by extension 'colcon_meta'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/configs) by extensions ['ros']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/configs) by extension 'ros'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/configs) by extensions ['cmake', 'python']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/configs) by extension 'cmake'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/configs) by extension 'python'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/configs) by extensions ['python_setup_py']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/configs) by extension 'python_setup_py'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container) by extension 'ros'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container) by extensions ['cmake', 'python']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container) by extension 'cmake'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container) by extension 'python'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container) by extensions ['python_setup_py']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container) by extension 'python_setup_py'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container/docker) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container/docker) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container/docker) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container/docker) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container/docker) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container/docker) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container/docker) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container/docker) by extension 'ros'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container/docker) by extensions ['cmake', 'python']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container/docker) by extension 'cmake'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container/docker) by extension 'python'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container/docker) by extensions ['python_setup_py']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/docker_container/docker) by extension 'python_setup_py'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/submission) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/submission) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/submission) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/submission) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/submission) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/submission) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/submission) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/submission) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/submission) by extension 'ros'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/submission) by extensions ['cmake', 'python']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/submission) by extension 'cmake'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/submission) by extension 'python'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/submission) by extensions ['python_setup_py']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/submission) by extension 'python_setup_py'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/tests) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/tests) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/tests) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/tests) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/tests) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/tests) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/tests) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/tests) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/tests) by extension 'ros'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/tests) by extensions ['cmake', 'python']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/tests) by extension 'cmake'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/tests) by extension 'python'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/tests) by extensions ['python_setup_py']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/prediction/tests) by extension 'python_setup_py'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking) by extension 'ros'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking) by extensions ['cmake', 'python']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking) by extension 'cmake'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking) by extension 'python'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking) by extensions ['python_setup_py']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking) by extension 'python_setup_py'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/configs) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/configs) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/configs) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/configs) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/configs) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/configs) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/configs) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/configs) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/configs) by extension 'ros'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/configs) by extensions ['cmake', 'python']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/configs) by extension 'cmake'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/configs) by extension 'python'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/configs) by extensions ['python_setup_py']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/configs) by extension 'python_setup_py'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/tests) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/tests) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/tests) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/tests) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/tests) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/tests) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/tests) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/tests) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/tests) by extension 'ros'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/tests) by extensions ['cmake', 'python']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/tests) by extension 'cmake'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/tests) by extension 'python'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/tests) by extensions ['python_setup_py']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/eval/tracking/tests) by extension 'python_setup_py'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/lidarseg) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/lidarseg) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/lidarseg) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/lidarseg) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/lidarseg) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/lidarseg) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/lidarseg) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/lidarseg) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/lidarseg) by extension 'ros'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/lidarseg) by extensions ['cmake', 'python']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/lidarseg) by extension 'cmake'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/lidarseg) by extension 'python'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/lidarseg) by extensions ['python_setup_py']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/lidarseg) by extension 'python_setup_py'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion) by extension 'ros'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion) by extensions ['cmake', 'python']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion) by extension 'cmake'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion) by extension 'python'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion) by extensions ['python_setup_py']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion) by extension 'python_setup_py'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion/tests) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion/tests) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion/tests) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion/tests) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion/tests) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion/tests) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion/tests) by extension 'colcon_meta'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion/tests) by extensions ['ros']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion/tests) by extension 'ros'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion/tests) by extensions ['cmake', 'python']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion/tests) by extension 'cmake'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion/tests) by extension 'python'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion/tests) by extensions ['python_setup_py']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/map_expansion/tests) by extension 'python_setup_py'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/panoptic) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/panoptic) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/panoptic) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/panoptic) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/panoptic) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/panoptic) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/panoptic) by extension 'colcon_meta'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/panoptic) by extensions ['ros']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/panoptic) by extension 'ros'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/panoptic) by extensions ['cmake', 'python']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/panoptic) by extension 'cmake'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/panoptic) by extension 'python'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/panoptic) by extensions ['python_setup_py']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/panoptic) by extension 'python_setup_py'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction) by extension 'colcon_meta'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction) by extensions ['ros']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction) by extension 'ros'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction) by extensions ['cmake', 'python']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction) by extension 'cmake'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction) by extension 'python'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction) by extensions ['python_setup_py']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction) by extension 'python_setup_py'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation) by extension 'ros'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation) by extensions ['cmake', 'python']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation) by extension 'cmake'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation) by extension 'python'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation) by extensions ['python_setup_py']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation) by extension 'python_setup_py'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation/tests) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation/tests) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation/tests) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation/tests) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation/tests) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation/tests) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation/tests) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation/tests) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation/tests) by extension 'ros'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation/tests) by extensions ['cmake', 'python']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation/tests) by extension 'cmake'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation/tests) by extension 'python'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation/tests) by extensions ['python_setup_py']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/input_representation/tests) by extension 'python_setup_py'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/models) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/models) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/models) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/models) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/models) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/models) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/models) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/models) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/models) by extension 'ros'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/models) by extensions ['cmake', 'python']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/models) by extension 'cmake'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/models) by extension 'python'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/models) by extensions ['python_setup_py']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/models) by extension 'python_setup_py'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/tests) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/tests) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/tests) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/tests) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/tests) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/tests) by extensions ['colcon_meta']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/tests) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/tests) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/tests) by extension 'ros'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/tests) by extensions ['cmake', 'python']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/tests) by extension 'cmake'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/tests) by extension 'python'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/tests) by extensions ['python_setup_py']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/prediction/tests) by extension 'python_setup_py'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/scripts) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/scripts) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/scripts) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/scripts) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/scripts) by extensions ['colcon_meta']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/scripts) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/scripts) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/scripts) by extension 'ros'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/scripts) by extensions ['cmake', 'python']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/scripts) by extension 'cmake'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/scripts) by extension 'python'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/scripts) by extensions ['python_setup_py']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/scripts) by extension 'python_setup_py'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/tests) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/tests) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/tests) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/tests) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/tests) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/tests) by extensions ['colcon_meta']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/tests) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/tests) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/tests) by extension 'ros'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/tests) by extensions ['cmake', 'python']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/tests) by extension 'cmake'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/tests) by extension 'python'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/tests) by extensions ['python_setup_py']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/tests) by extension 'python_setup_py'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils) by extension 'ros'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils) by extensions ['cmake', 'python']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils) by extension 'cmake'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils) by extension 'python'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils) by extensions ['python_setup_py']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils) by extension 'python_setup_py'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils/tests) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils/tests) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils/tests) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils/tests) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils/tests) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils/tests) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils/tests) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils/tests) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils/tests) by extension 'ros'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils/tests) by extensions ['cmake', 'python']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils/tests) by extension 'cmake'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils/tests) by extension 'python'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils/tests) by extensions ['python_setup_py']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/nuscenes/utils/tests) by extension 'python_setup_py'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/tutorials) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/tutorials) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/tutorials) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/tutorials) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/tutorials) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/tutorials) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/tutorials) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/tutorials) by extension 'ros'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/tutorials) by extensions ['cmake', 'python']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/tutorials) by extension 'cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/tutorials) by extension 'python'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/tutorials) by extensions ['python_setup_py']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/python-sdk/tutorials) by extension 'python_setup_py'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/setup) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/setup) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/setup) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/setup) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/setup) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/setup) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/setup) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/setup) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/setup) by extension 'ros'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/setup) by extensions ['cmake', 'python']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/setup) by extension 'cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/setup) by extension 'python'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/setup) by extensions ['python_setup_py']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(nuscenes-devkit/setup) by extension 'python_setup_py'
+[0.316s] DEBUG:colcon.colcon_core.package_identification:Package 'nuscenes-devkit/setup' with type 'python' and name 'nuscenes-devkit'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag) by extensions ['ignore', 'ignore_ament_install']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag) by extension 'ignore'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag) by extension 'ignore_ament_install'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag) by extensions ['colcon_pkg']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag) by extension 'colcon_pkg'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag) by extensions ['colcon_meta']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag) by extension 'colcon_meta'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag) by extensions ['ros']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag) by extension 'ros'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag) by extensions ['cmake', 'python']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag) by extension 'cmake'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag) by extension 'python'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag) by extensions ['python_setup_py']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag) by extension 'python_setup_py'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_07_28-14_38_23) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_07_28-14_38_23) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_07_28-14_38_23) by extension 'ignore_ament_install'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_07_28-14_38_23) by extensions ['colcon_pkg']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_07_28-14_38_23) by extension 'colcon_pkg'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_07_28-14_38_23) by extensions ['colcon_meta']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_07_28-14_38_23) by extension 'colcon_meta'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_07_28-14_38_23) by extensions ['ros']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_07_28-14_38_23) by extension 'ros'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_07_28-14_38_23) by extensions ['cmake', 'python']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_07_28-14_38_23) by extension 'cmake'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_07_28-14_38_23) by extension 'python'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_07_28-14_38_23) by extensions ['python_setup_py']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_07_28-14_38_23) by extension 'python_setup_py'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_08_21-14_13_15) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_08_21-14_13_15) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_08_21-14_13_15) by extension 'ignore_ament_install'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_08_21-14_13_15) by extensions ['colcon_pkg']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_08_21-14_13_15) by extension 'colcon_pkg'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_08_21-14_13_15) by extensions ['colcon_meta']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_08_21-14_13_15) by extension 'colcon_meta'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_08_21-14_13_15) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_08_21-14_13_15) by extension 'ros'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_08_21-14_13_15) by extensions ['cmake', 'python']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_08_21-14_13_15) by extension 'cmake'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_08_21-14_13_15) by extension 'python'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_08_21-14_13_15) by extensions ['python_setup_py']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(rosbag/rosbag2_2025_08_21-14_13_15) by extension 'python_setup_py'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/cae_microphone_array) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/cae_microphone_array) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/cae_microphone_array) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/cae_microphone_array) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/cae_microphone_array) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/cae_microphone_array) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/cae_microphone_array) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/cae_microphone_array) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/cae_microphone_array) by extension 'ros'
+[0.320s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cae_microphone_array' with type 'ros.catkin' and name 'cae_microphone_array'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(tables) by extensions ['ignore', 'ignore_ament_install']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(tables) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(tables) by extension 'ignore_ament_install'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(tables) by extensions ['colcon_pkg']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(tables) by extension 'colcon_pkg'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(tables) by extensions ['colcon_meta']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(tables) by extension 'colcon_meta'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(tables) by extensions ['ros']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(tables) by extension 'ros'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables) by extensions ['cmake', 'python']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables) by extension 'cmake'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables) by extension 'python'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables) by extensions ['python_setup_py']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables) by extension 'python_setup_py'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables/__pycache__) by extension 'ignore'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables/__pycache__) by extension 'ignore_ament_install'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables/__pycache__) by extensions ['colcon_pkg']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables/__pycache__) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables/__pycache__) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables/__pycache__) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables/__pycache__) by extensions ['ros']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables/__pycache__) by extension 'ros'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables/__pycache__) by extensions ['cmake', 'python']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables/__pycache__) by extension 'cmake'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables/__pycache__) by extension 'python'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables/__pycache__) by extensions ['python_setup_py']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(tables/__pycache__) by extension 'python_setup_py'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extensions ['ignore', 'ignore_ament_install']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extension 'ignore'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extension 'ignore_ament_install'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extensions ['colcon_pkg']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extensions ['ros']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extension 'ros'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extensions ['cmake', 'python']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extension 'cmake'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extension 'python'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extensions ['python_setup_py']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extension 'python_setup_py'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(utils/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(utils/__pycache__) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(utils/__pycache__) by extension 'ignore_ament_install'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(utils/__pycache__) by extensions ['colcon_pkg']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(utils/__pycache__) by extension 'colcon_pkg'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(utils/__pycache__) by extensions ['colcon_meta']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(utils/__pycache__) by extension 'colcon_meta'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(utils/__pycache__) by extensions ['ros']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(utils/__pycache__) by extension 'ros'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(utils/__pycache__) by extensions ['cmake', 'python']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(utils/__pycache__) by extension 'cmake'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(utils/__pycache__) by extension 'python'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(utils/__pycache__) by extensions ['python_setup_py']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(utils/__pycache__) by extension 'python_setup_py'
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.341s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'nuscenes-devkit' in 'nuscenes-devkit/setup'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'cae_microphone_array' build argument 'cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'cae_microphone_array' build argument 'cmake_target' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'cae_microphone_array' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'cae_microphone_array' build argument 'cmake_clean_cache' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'cae_microphone_array' build argument 'cmake_clean_first' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'cae_microphone_array' build argument 'cmake_force_configure' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'cae_microphone_array' build argument 'ament_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'cae_microphone_array' build argument 'catkin_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'cae_microphone_array' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.341s] DEBUG:colcon.colcon_core.verb:Building package 'cae_microphone_array' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/Prius2audioscene/build/cae_microphone_array', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/Prius2audioscene/install/cae_microphone_array', 'merge_install': False, 'path': '/workspaces/Prius2audioscene/src/cae_microphone_array', 'symlink_install': False, 'test_result_base': None}
+[0.341s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.342s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.342s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/workspaces/Prius2audioscene/src/cae_microphone_array' with build type 'catkin'
+[0.342s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/Prius2audioscene/src/cae_microphone_array'
+[0.343s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.344s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.344s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.350s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/Prius2audioscene/build/cae_microphone_array': /usr/bin/cmake /workspaces/Prius2audioscene/src/cae_microphone_array -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/workspaces/Prius2audioscene/install/cae_microphone_array
+[1.887s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/Prius2audioscene/build/cae_microphone_array' returned '0': /usr/bin/cmake /workspaces/Prius2audioscene/src/cae_microphone_array -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/workspaces/Prius2audioscene/install/cae_microphone_array
+[1.890s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/Prius2audioscene/build/cae_microphone_array': /usr/bin/cmake --build /workspaces/Prius2audioscene/build/cae_microphone_array -- -j20 -l20
+[3.347s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/Prius2audioscene/build/cae_microphone_array' returned '0': /usr/bin/cmake --build /workspaces/Prius2audioscene/build/cae_microphone_array -- -j20 -l20
+[3.356s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/Prius2audioscene/build/cae_microphone_array': /usr/bin/cmake --install /workspaces/Prius2audioscene/build/cae_microphone_array
+[3.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/Prius2audioscene/build/cae_microphone_array' returned '0': /usr/bin/cmake --install /workspaces/Prius2audioscene/build/cae_microphone_array
+[3.424s] Level 1:colcon.colcon_core.shell:create_environment_hook('cae_microphone_array', 'ros_package_path')
+[3.425s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/ros_package_path.ps1'
+[3.426s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/ros_package_path.dsv'
+[3.426s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/ros_package_path.sh'
+[3.427s] Level 1:colcon.colcon_ros.task.catkin:checking '/workspaces/Prius2audioscene/install/cae_microphone_array/local/lib/python3.10/dist-packages'
+[3.427s] Level 1:colcon.colcon_core.shell:create_environment_hook('cae_microphone_array', 'catkin_pythonpath')
+[3.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/catkin_pythonpath.ps1'
+[3.428s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/catkin_pythonpath.dsv'
+[3.428s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/catkin_pythonpath.sh'
+[3.429s] Level 1:colcon.colcon_core.shell:create_environment_hook('cae_microphone_array', 'pkg_config_path')
+[3.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/pkg_config_path.ps1'
+[3.429s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/pkg_config_path.dsv'
+[3.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/pkg_config_path.sh'
+[3.432s] Level 1:colcon.colcon_core.shell:create_environment_hook('cae_microphone_array', 'pkg_config_path_multiarch')
+[3.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/pkg_config_path_multiarch.ps1'
+[3.433s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/pkg_config_path_multiarch.dsv'
+[3.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/pkg_config_path_multiarch.sh'
+[3.435s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cae_microphone_array)
+[3.438s] Level 1:colcon.colcon_core.environment:checking '/workspaces/Prius2audioscene/install/cae_microphone_array' for CMake module files
+[3.439s] Level 1:colcon.colcon_core.environment:checking '/workspaces/Prius2audioscene/install/cae_microphone_array' for CMake config files
+[3.439s] Level 1:colcon.colcon_core.shell:create_environment_hook('cae_microphone_array', 'cmake_prefix_path')
+[3.440s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/cmake_prefix_path.ps1'
+[3.440s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/cmake_prefix_path.dsv'
+[3.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/cmake_prefix_path.sh'
+[3.441s] Level 1:colcon.colcon_core.environment:checking '/workspaces/Prius2audioscene/install/cae_microphone_array/lib'
+[3.442s] Level 1:colcon.colcon_core.shell:create_environment_hook('cae_microphone_array', 'ld_library_path_lib')
+[3.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/ld_library_path_lib.ps1'
+[3.442s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/ld_library_path_lib.dsv'
+[3.443s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/hook/ld_library_path_lib.sh'
+[3.443s] Level 1:colcon.colcon_core.environment:checking '/workspaces/Prius2audioscene/install/cae_microphone_array/bin'
+[3.443s] Level 1:colcon.colcon_core.environment:checking '/workspaces/Prius2audioscene/install/cae_microphone_array/lib/pkgconfig/cae_microphone_array.pc'
+[3.445s] Level 1:colcon.colcon_core.environment:checking '/workspaces/Prius2audioscene/install/cae_microphone_array/lib/python3.10/site-packages'
+[3.445s] Level 1:colcon.colcon_core.environment:checking '/workspaces/Prius2audioscene/install/cae_microphone_array/bin'
+[3.446s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/package.ps1'
+[3.448s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/package.dsv'
+[3.449s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/package.sh'
+[3.450s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/package.bash'
+[3.450s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/Prius2audioscene/install/cae_microphone_array/share/cae_microphone_array/package.zsh'
+[3.451s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/Prius2audioscene/install/cae_microphone_array/share/colcon-core/packages/cae_microphone_array)
+[3.451s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.451s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.452s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.452s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.458s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[3.458s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.458s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.459s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.461s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[3.461s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.462s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/Prius2audioscene/install/local_setup.ps1'
+[3.463s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/Prius2audioscene/install/_local_setup_util_ps1.py'
+[3.464s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/Prius2audioscene/install/setup.ps1'
+[3.465s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/Prius2audioscene/install/local_setup.sh'
+[3.466s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/Prius2audioscene/install/_local_setup_util_sh.py'
+[3.467s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/Prius2audioscene/install/setup.sh'
+[3.468s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/Prius2audioscene/install/local_setup.bash'
+[3.468s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/Prius2audioscene/install/setup.bash'
+[3.470s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/Prius2audioscene/install/local_setup.zsh'
+[3.470s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/Prius2audioscene/install/setup.zsh'

@@ -1,0 +1,13 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/cae_microphone_array__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cae_microphone_array/msg/detail/audio_stream__type_support.cpp.o"
+  "CMakeFiles/cae_microphone_array__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cae_microphone_array/msg/detail/audio_stream__type_support.cpp.o.d"
+  "libcae_microphone_array__rosidl_typesupport_introspection_cpp.pdb"
+  "libcae_microphone_array__rosidl_typesupport_introspection_cpp.so"
+  "rosidl_typesupport_introspection_cpp/cae_microphone_array/msg/detail/audio_stream__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/cae_microphone_array/msg/detail/audio_stream__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/cae_microphone_array__rosidl_typesupport_introspection_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

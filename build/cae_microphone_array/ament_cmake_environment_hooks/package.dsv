@@ -1,0 +1,4 @@
+source;share/cae_microphone_array/local_setup.bash
+source;share/cae_microphone_array/local_setup.dsv
+source;share/cae_microphone_array/local_setup.sh
+source;share/cae_microphone_array/local_setup.zsh

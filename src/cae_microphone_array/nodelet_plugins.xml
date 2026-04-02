@@ -1,0 +1,12 @@
+<library path="lib/libcae_microphone_array">
+    <class name="cae_micarray_pkg/MicrophoneArrayDriverNodeletClass" type="cae_micarray_pkg::MicrophoneArrayDriverNodeletClass" base_class_type="nodelet::Nodelet">
+        <description>
+            CAE Microphone Array driver nodelet.
+        </description>
+    </class>
+    <class name="cae_micarray_pkg/MicrophoneArrayProcessingNodeletClass" type="cae_micarray_pkg::MicrophoneArrayProcessingNodeletClass" base_class_type="nodelet::Nodelet">
+        <description>
+            CAE Microphone Array processing nodelet.
+        </description>
+    </class>
+</library>

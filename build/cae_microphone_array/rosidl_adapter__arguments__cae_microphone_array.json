@@ -1,0 +1,6 @@
+{
+  "package_name": "cae_microphone_array",
+  "non_idl_tuples": [
+    "/workspaces/Prius2audioscene/src/cae_microphone_array:msg/AudioStream.msg"
+  ]
+}
