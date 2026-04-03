@@ -1,0 +1,9 @@
+__pycache__
+output*
+rosbag/**
+render_nuscenes.ipynb
+.vscode
+scene*/*
+install/
+log/
+*.pkl

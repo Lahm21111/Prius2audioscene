@@ -1,0 +1,46 @@
+{
+  "name": "Existing Dockerfile",
+  "build": {
+    "context": "..",
+    "dockerfile": "Dockerfile",
+    "options": [
+      "--add-host=host.docker.internal:host-gateway"
+    ],
+    "args": {
+      "WORKSPACE": "${containerWorkspaceFolder}",
+      "NO_PROXY": "localhost,127.0.0.1,host.docker.internal",
+      "no_proxy": "localhost,127.0.0.1,host.docker.internal"
+    }
+  },
+  "mounts": [
+  ],
+  "runArgs": [
+    "--network=host",
+    "--cap-add=SYS_PTRACE",
+    "--security-opt=seccomp:unconfined",
+    "--security-opt=apparmor:unconfined",
+    "--volume=/tmp/.X11-unix:/tmp/.X11-unix",
+    "--volume=${localEnv:HOME}/.Xauthority:/home/vscode/.Xauthority",
+    "--volume=/dev/input:/dev/input",
+    "--volume=/etc/localtime:/etc/localtime",
+    "--privileged"
+  ],
+  "containerEnv": {
+    "DISPLAY": "${localEnv:DISPLAY}",
+    "WAYLAND_DISPLAY": "${localEnv:WAYLAND_DISPLAY}",
+    "CAM_FRONTCENTER_TYPE": "image_raw",
+    "CAM_SECONDARY_TYPE": "image_raw",
+    "CONFIG_PATH": "${containerWorkspaceFolder}/config/config.yaml",
+    "SCENE_NAME": "rosbag2_2025_08_21-13_52_28",
+    "NO_PROXY": "localhost,127.0.0.1,host.docker.internal",
+    "no_proxy": "localhost,127.0.0.1,host.docker.internal"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.debugpy",
+        "ms-python.python"
+      ]
+    }
+  }
+}
