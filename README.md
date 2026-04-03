@@ -50,10 +50,10 @@ Open `rosbag2nuscene.py`, copy the rosbag filename, and set the `bag_name` varia
 Example:
 
 ```python
-bag_name = "your_bag_name.bag"
+bag_name = "your_rosbag_folder"
 ```
 
-Then run:
+Please copy the name of the rosbag to line 13 in `rosbag2nuscene.py` and run:
 
 ```python
 python rosbag2nuscene.py
@@ -69,7 +69,7 @@ Download the annotation file from Segments.ai and place it into:
 
 ### 5. Move the generated output to the dataset directory
 
-After the conversion is complete, move the generated output into the `dataset/` directory if it is not already there.
+After the conversion is complete, move the generated output (`output/`) into the `dataset/` directory if it is not already there.
 
 ### 6. Align the annotations
 
@@ -85,18 +85,10 @@ This step aligns the downloaded annotations with the generated dataset.
 
 ### 7. Optional: Upload the dataset to Segments.ai
 
-If you want to upload the dataset to Segments.ai, open `utils/export_to_Segments.py`, change args.dataset to the target dataset name, and run the script.
+If you want to upload the dataset to Segments.ai, open `utils/export_to_Segments.py`, change args.dataset (line 348) to the target dataset name and the name of the sample (scene) in line 323, and run the script.
 
 Example:
 
 ```python
 python utils/export_to_Segments.py
 ```
-
-<!-- 1. First Do "reopen in container"
-2. Add the rosbag to directory rosbag
-3. copy the name of the rosbag to rosbag2nuscene.py: and run bag_name 
-4. download the annotation file from segments.ai and put it in dataset/labels
-5. move the output to dataset
-7. if you want to upload the dataset to segments, change the "args.dataset" in utils/export_to_Segments.py and run it 
-6. change the bag name in utils/create_annotations_fromSegments.py and run create_annotation _fromSegments.py to align the annotation -->
